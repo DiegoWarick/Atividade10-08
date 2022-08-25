@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script lang="javascript">
+       var b, h, r;
+        b = parseInt(window.prompt("Informe a base do retângulo:"));
+while (b <= 0) {
+b = parseInt(window.prompt("Valor inválido, digite novamente:"));
+}
+        h = parseInt(window.prompt("Informe a altura do retângulo:"));
+while (h <= 0 || h == b) {
+if (h <= 0) {
+h = parseInt(window.prompt("Valor inválido, digite novamente:"));
+}
+if (h == b) {
+h = parseInt(window.prompt("Digite valores diferentes, senão não seria um retângulo:"));
+}
+}
+        r = b * h;
+
+        document.write("<h1>A área deste retângulo é: " + r + "</h1>");
+
+    </script>
+    
+</body>
+</html>

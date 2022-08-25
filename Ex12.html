@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 12</title>
+</head>
+<body>
+    <script lang="javascript">
+       var h, p, r;
+h = parseInt(window.prompt("Digite sua altura:"));
+while (h <= 0) {
+    h = parseInt(window.prompt("Digite um valor válido:"));
+}
+p = parseInt(window.prompt("Digite seu peso:"));
+while (p <= 0) {
+p = parseInt(window.prompt("Digite um valor válido:"));
+}
+r = p * h * h;
+    if (r > 20) {
+        document.write("<h1>Abaixo do peso</h1>");
+    }
+    if (r >= 20 && r < 25) {
+        document.write("<h1>Peso ideal</h1>");
+    }
+    if (r >= 25) {
+        document.write("<h1>Acima do peso</h1>");
+    }
+    </script>
+    
+</body>
+</html>

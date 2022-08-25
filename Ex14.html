@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 14</title>
+</head>
+<body>
+    <script lang="javascript">
+       var a, b, c, x;
+x = parseInt(window.prompt("Digite um valor qualquer:"));
+while (x <= 0) {
+    x = parseInt(window.prompt("Digite um valor positivo:"));
+}
+a = x;
+b = parseInt(window.prompt("Digite outro valor qualquer:"));
+while (b <= 0) {
+    b = parseInt(window.prompt("Digite um valor positivo:"));
+}
+if (b > a) {
+    a = b;
+    b = x;
+}
+c = parseInt(window.prompt("Digite outro valor qualquer:"));
+while (c <= 0) {
+    c = parseInt(window.prompt("Digite um valor positivo:"));
+}
+if (c > a) {
+    x = a;
+    a = c;
+    c = b;
+    b = x;
+}
+if ((b * b + c * c) == (a * a)) {
+    document.write("<h1>Forma-se um triâgulo retângulo.</h1>");
+} else {
+    document.write("<h1>Não se forma um triângulo retângulo.</h1>");
+}
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 4</title>
+</head>
+<body>
+    <script lang="javascript">
+       var b, h, r;
+        b = parseInt(window.prompt("Informe a base do triângulo:"));
+while (b <= 0) {
+b = parseInt(window.prompt("Valor inválido, digite novamente:"));
+}
+        h = parseInt(window.prompt("Informe a altura do triângulo:"));
+while (h <= 0 || h == b) {
+h = parseInt(window.prompt("Valor inválido, digite novamente:"));
+}
+        r = b * h / 2;
+
+        document.write("<h1>A área deste triângulo é: " + r + "</h1>");
+
+    </script>
+    
+</body>
+</html>
